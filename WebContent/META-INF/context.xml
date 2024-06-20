@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<!-- 上記はEclipseの警告を消すための記述です。 -->
+<!-- 自動リロード -->
+
+<!-- Resource↓ -->
+	<!-- name...PG側からデータベースへアクセスするときに参照する名前 -->
+	<!-- type 接続に使うインターフェイス -->
+	<!-- driverClassName...データベース接続に使う -->
+	<!-- url...データベース接続に使うurl -->
+
+<Context reloadable="true">
+	<Resource
+		name="jdbc/kadai"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="org.h2.Driver"
+		url="jdbc:h2:tcp://localhost/~/kadai"
+		username="sa"
+		password=""
+	/>
+</Context>
